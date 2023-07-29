@@ -1,0 +1,4 @@
+*{margin: 0px; padding: 0px;}
+#hero {width: 900px; text-align: center; margin: 0px auto; position: relative; top: 30px; line-height: 50px;}
+img {background-color: gray; transform: skewX(-10deg); margin-left: 20px; border-radius: 10%;}
+img:hover {background-color: pink; transform: skewX(-10deg) scale(1.5,1.5); position: relative; z-index: 1; border: 3px solid white;}
