@@ -11,8 +11,26 @@ a {text-decoration: none;}
 #content nav {width: 100%; height: 120px; border-bottom: 2px solid lightgray;}
 #content nav>img {width: 30px; float: right; position: relative; top: 80px; bottom: 10px; right: 10px;}
 #content section {display: flex; width: 100%; height: 600px;}
-#content section article {width: 250px; height: 100%; opacity: 0.4; background-size: 0% 100%;}
-#content section article:hover {background-size: 100% 100%; background-repeat: no-repeat; opacity: 1.0; background-image: url("back.png"); transition: background-size 0.5s ease;}
+
+#content section article {
+  width: 250px;
+  height: 100%;
+  opacity: 0.4;
+}
+
+#content section article:not(:hover) {
+  background-size: 0% 100%;
+  transition: background-size 1s ease;
+}
+
+#content section article:hover {
+  background-size: 100% 100%;
+  opacity: 1.0;
+  background-repeat: no-repeat;
+  background-image: url("back.png");
+  transition: background-size 1s ease;
+}
+
 #content section article:hover img {transform: translate(11px,-11px) scale(1.2,1.2); transition: transform 0.5s ease;}
 #content section article .inner {display: flex; flex-direction: column; margin: 70px 40px 70px 40px;}
 #content section article .inner div {line-height: 20px;}
